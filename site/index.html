@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fdfaf8">
+  <title>Diego &amp; Paula · 15 de enero de 2027</title>
+  <meta name="description" content="Acompáñanos a celebrar la boda de Diego y Paula el 15 de enero de 2027 en el Viejo San Juan, Puerto Rico.">
+  <meta property="og:title" content="Diego &amp; Paula · 15 de enero de 2027">
+  <meta property="og:description" content="Un fin de semana de celebración, amor y buena compañía en el encanto histórico del Viejo San Juan.">
+  <!-- EDITAR: og:image must be made absolute after deploy. -->
+  <meta property="og:image" content="assets/img/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('js');setTimeout(function(){if(!document.documentElement.classList.contains('app-ready'))document.documentElement.classList.remove('js')},5000)</script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Shared watercolor effects are vector filters; the artwork stays local. -->
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="watercolor" x="-10%" y="-50%" width="120%" height="200%">
+        <feTurbulence type="fractalNoise" baseFrequency=".035 .13" numOctaves="3" seed="12" result="grain"/>
+        <feDisplacementMap in="SourceGraphic" in2="grain" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+      <filter id="wave-watercolor" x="-10%" y="-30%" width="120%" height="160%">
+        <feTurbulence type="fractalNoise" baseFrequency=".035 .13" numOctaves="3" seed="12" result="grain"/>
+        <feDisplacementMap in="SourceGraphic" in2="grain" scale="12" xChannelSelector="R" yChannelSelector="G"/>
+        <feGaussianBlur stdDeviation="1.4"/>
+      </filter>
+      <linearGradient id="wash" x2="0" y2="1"><stop stop-color="#b7e3fd" stop-opacity=".25"/><stop offset=".5" stop-color="#86d6fa" stop-opacity=".85"/><stop offset="1" stop-color="#b7e3fd" stop-opacity=".1"/></linearGradient>
+      <linearGradient id="horizon-wash" x2="0" y2="1"><stop stop-color="#85cef7" stop-opacity=".85"/><stop offset=".3" stop-color="#a5dffa" stop-opacity=".65"/><stop offset="1" stop-color="#b7e3fd" stop-opacity="0"/></linearGradient>
+      <linearGradient id="infinity-ink"><stop stop-color="#c4eaff"/><stop offset=".5" stop-color="#a4dcf9"/><stop offset="1" stop-color="#bee7ff"/></linearGradient>
+    </defs>
+  </svg>
+
+  <div class="intro" id="intro">
+    <img class="intro-floral intro-floral-left" src="assets/img/floral-top-left.webp" width="505" height="340" alt="" aria-hidden="true">
+    <img class="intro-floral intro-floral-right" src="assets/img/floral-top-right.webp" width="196" height="191" alt="" aria-hidden="true">
+    <img class="intro-floral intro-floral-bottom-left" src="assets/img/floral-bottom-left.webp" width="130" height="236" alt="" aria-hidden="true">
+    <img class="intro-floral intro-floral-bottom-right" src="assets/img/floral-bottom-right.webp" width="181" height="400" alt="" aria-hidden="true">
+    <div class="intro-center">
+      <button class="envelope" id="open-invitation" type="button" aria-label="Abrir invitación">
+        <span class="envelope-liner"></span><span class="envelope-card">Diego <span>&amp;</span> Paula</span>
+        <span class="envelope-pocket"></span><span class="envelope-flap"><span class="envelope-flap-front"></span><span class="envelope-flap-back"></span></span>
+        <span class="wax-seal">D <span>&amp;</span> P</span>
+      </button>
+      <p class="open-prompt">Toca para abrir</p>
+    </div>
+  </div>
+
+  <main class="invitation" id="invitation" aria-label="Invitación a la boda de Diego y Paula">
+    <header class="masthead">
+      <span class="floral corner-left"><img src="assets/img/floral-top-left.webp" width="505" height="340" alt="" aria-hidden="true"></span>
+      <span class="floral corner-right"><img src="assets/img/floral-top-right.webp" width="196" height="191" alt="" aria-hidden="true"></span>
+      <p class="prelude"><span style="--d:.05s">ESTÁS CORDIALMENTE</span><span style="--d:.17s">INVITADO(A) A</span><span style="--d:.29s">LA BODA DE</span></p>
+      <span class="name-rule" style="--d:.4s"></span>
+      <h1 class="names"><span class="name" style="--d:.5s">DIEGO</span>
+        <span class="sr-only"> y </span>
+        <svg class="infinity" viewBox="0 0 100 42" fill="none" aria-hidden="true"><path pathLength="1" d="M50 21C36 7 18 0 9 10C-5 27 11 43 27 33L50 21C64 7 82 0 91 10C105 27 89 43 73 33Z" stroke="url(#infinity-ink)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="name" style="--d:.85s">PAULA</span></h1>
+      <span class="name-rule" style="--d:1s"></span>
+    </header>
+
+    <div class="hero"><div class="hero-motion"><img class="hero-art" src="assets/img/hero-scene.webp" width="724" height="438" alt="Acuarela del Viejo San Juan: una garita de El Morro junto al mar azul y un edificio colonial con balcones y flores."></div></div>
+
+    <section class="location reveal" aria-labelledby="location-title">
+      <h2 id="location-title">EN EL VIEJO SAN JUAN,<br>PUERTO RICO</h2>
+      <svg class="little-wave" viewBox="0 0 100 15" fill="none" aria-hidden="true"><path pathLength="1" d="M2 8Q10-3 18 8T34 8T50 8T66 8T82 8T98 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </section>
+
+    <section class="date-section reveal" aria-labelledby="date-title">
+      <h2 id="date-title" class="date-title"><span>VIERNES 15 DE ENERO DE 2027</span></h2>
+      <p class="event-time">A LAS 7:00 P. M.</p>
+      <p class="welcome italic">Acompáñanos en un fin de semana de celebración, amor y buena compañía en el encanto histórico del Viejo San Juan.</p>
+    </section>
+
+    <section class="countdown-section reveal" aria-label="Cuenta regresiva para la boda">
+      <span class="floral date-left"><img src="assets/img/sprig-date-left.webp" width="125" height="165" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+      <span class="floral date-right"><img src="assets/img/sprig-date-right.webp" width="151" height="160" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+      <div class="countdown" id="countdown" aria-hidden="true">
+        <div><span class="digit" data-unit="days">00</span><span class="unit">Días</span></div><div><span class="digit" data-unit="hours">00</span><span class="unit">Horas</span></div><div><span class="digit" data-unit="minutes">00</span><span class="unit">Minutos</span></div><div><span class="digit" data-unit="seconds">00</span><span class="unit">Segundos</span></div>
+      </div>
+      <p class="today italic" id="today" hidden>¡Hoy celebramos!</p>
+      <p class="sr-only" id="countdown-summary" aria-live="polite" aria-atomic="true">La celebración será el 15 de enero de 2027 a las 7:00 p. m., hora de Puerto Rico.</p>
+      <noscript><p class="italic">15 de enero de 2027 · 7:00 p. m. AST</p></noscript>
+    </section>
+
+    <section class="celebration reveal" aria-labelledby="celebration-title">
+      <svg class="icon toast-icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="m7 5-2 7c-1 4 5 6 6 2l2-7ZM8 16l-2 5m-3-1 6 2M17 5l2 7c1 4-5 6-6 2l-2-7Zm-1 11 2 5m3-1-6 2M12 1v2M7 1l2 2m8-2-2 2"/></svg>
+      <h2 id="celebration-title">CELEBRACIÓN</h2>
+      <!-- EDITAR: enlace de la ubicación (Google) -->
+      <a class="venue-link" href="https://share.google/LNmq8qCUFgADoMCxP" target="_blank" rel="noopener">
+        <p class="italic venue">Hotel Palacio Provincial en el Atelier Rooftop Terrace</p>
+        <p>3er Piso</p>
+        <p class="address"><svg class="pin" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-6-5.6-6-11a6 6 0 0 1 12 0c0 5.4-6 11-6 11Zm0-8.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></svg>103 Calle de San Francisco, San Juan, 00901, Puerto Rico</p>
+        <span class="sr-only">(abre la ubicación en Google)</span>
+      </a>
+    </section>
+
+    <section class="itinerary reveal" aria-labelledby="itinerary-title">
+      <span class="floral itinerary-left"><img src="assets/img/sprig-itinerary-left.webp" width="86" height="142" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+      <div class="brush-heading"><svg viewBox="0 0 500 58" preserveAspectRatio="none" aria-hidden="true"><path d="M8 30Q100-1 240 6T491 30Q390 60 250 51T8 30Z" fill="url(#wash)" filter="url(#watercolor)"/></svg><h2 id="itinerary-title">ITINERARIO</h2></div>
+      <ol class="timeline">
+        <li style="--d:.1s"><span class="timeline-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 17a9 9 0 0 1 18 0M2 18h20v3H2Zm9-14a1 1 0 1 1 2 0 1 1 0 0 1-2 0m1 1v3"/></svg></span><p><strong>7:00 p. m.</strong> <span>– Bienvenida</span></p></li>
+        <li style="--d:.25s"><span class="timeline-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M14 14a6 6 0 1 1-12 0 6 6 0 0 1 12 0Zm8 0a6 6 0 1 1-12 0 6 6 0 0 1 12 0ZM12 6C6 3 9 0 12 3c3-3 6 0 0 3Z"/></svg></span><p><strong>7:30 p. m.</strong> <span>– Ceremonia</span></p></li>
+        <li style="--d:.4s"><span class="timeline-badge"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 5h18l-9 10Zm9 10v7m-4 0h8M6 8h12m-4-3 5-4m-2 0h4"/></svg></span><p><strong>8:00 p. m.</strong> <span>– Celebración con aperitivos y bebidas</span></p></li>
+      </ol>
+    </section>
+
+    <section class="dress-code reveal" aria-labelledby="dress-title">
+      <svg class="wave-band second-wave" viewBox="0 0 724 100" preserveAspectRatio="none" aria-hidden="true"><g fill="url(#horizon-wash)" filter="url(#wave-watercolor)"><path opacity=".8" d="M-12 45C30 5 75 1 125 24S205 72 260 45 335 13 390 38 470 69 530 39 605 9 655 23 710 42 740 6V105H-12Z"/><path opacity=".4" d="M-12 69C45 32 85 25 140 49S215 90 280 63 350 36 410 58 485 86 545 60 615 33 670 46 715 60 740 28V105H-12Z"/></g></svg>
+      <svg class="icon hanger-icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M10 5c0-4 6-4 6 0 0 2-4 2-4 5L2 17v3h20v-3L12 10"/></svg>
+      <h2 id="dress-title">CÓDIGO DE VESTIMENTA</h2>
+      <p class="italic dress-style">Semi Formal</p>
+      <p class="dress-copy">Vestimenta ligera y transpirable, acorde a la celebración en la isla.</p>
+      <ul class="swatches" aria-label="Colores sugeridos"><li class="swatch royal" style="--d:.1s"><span class="sr-only">Azul real</span></li><li class="swatch sky" style="--d:.2s"><span class="sr-only">Azul cielo</span></li><li class="swatch sage" style="--d:.3s"><span class="sr-only">Verde salvia</span></li><li class="swatch sand" style="--d:.4s"><span class="sr-only">Arena</span></li></ul>
+    </section>
+
+    <section class="registry reveal" aria-labelledby="registry-title">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path pathLength="1" d="M3 11h18v11H3ZM2 7h20v4H2Zm10 0v15M12 7C1 7 5-4 12 7Zm0 0C23 7 19-4 12 7Z"/></svg>
+      <h2 id="registry-title">REGISTRO</h2>
+      <p>Tu presencia es el mejor regalo. Si deseas hacernos un obsequio, puedes encontrar nuestro registro a continuación.</p>
+      <!-- EDITAR: pega aquí el enlace del registro -->
+      <a class="button registry-button" href="#" target="_blank" rel="noopener">VER REGISTRO ↗</a>
+    </section>
+
+    <div class="rsvp reveal">
+      <!-- EDITAR: enlace para confirmar asistencia (Google Forms) -->
+      <a class="button rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSdQrRtpaj_YjnPtXgHcVvgvU__1AGcV7rWzRVyQnpwMN1J0Og/viewform?usp=dialog" target="_blank" rel="noopener">CONFIRMAR ASISTENCIA →</a>
+    </div>
+    <div class="floral-footer" aria-hidden="true">
+      <span class="floral bottom-left"><img src="assets/img/floral-bottom-left.webp" width="130" height="236" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+      <span class="floral bottom-right"><img src="assets/img/floral-bottom-right.webp" width="181" height="400" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+      <span class="floral bottom-garland"><img src="assets/img/garland-bottom.webp" width="542" height="117" loading="lazy" decoding="async" alt="" aria-hidden="true"></span>
+    </div>
+  </main>
+</body>
+</html>
